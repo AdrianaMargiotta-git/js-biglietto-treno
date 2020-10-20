@@ -14,7 +14,6 @@ var elementoOutput = document.getElementById('pagare');
 //OPERAZIONE
   //calcolo prezzo del biglietto intero
   var prezzo = tragitto * 0.21;
-  //questo serve ???
   var p = prezzo.toFixed(2);
   console.log("il prezzo senza sconto è: ", p);
 
@@ -31,9 +30,9 @@ var elementoOutput = document.getElementById('pagare');
 //OUTPUT
 //stabilire se l'utente ha diritto ad una percetuale di sconto
   if (eta < 18) {
-    elementoOutput.innerHTML = "Il prezzo del biglietto è di: " + m + "<br> hai usufruito dello sconto del 20% per i minorenni";
+    elementoOutput.innerHTML = "Il prezzo del biglietto è di: &euro;" + m + "<br> hai usufruito dello sconto del 20% per i minorenni";
   } else if (eta > 65) {
-    elementoOutput.innerHTML = "Il prezzo del biglietto è di: " + o + "<br> hai usufruito dello sconto del 40% per gli over 65";
+    elementoOutput.innerHTML = "Il prezzo del biglietto è di: &euro;" + o + "<br> hai usufruito dello sconto del 40% per gli over 65";
   } else {
-    elementoOutput.innerHTML = "Il prezzo del biglietto è di: " + p;
+    elementoOutput.innerHTML = "Il prezzo del biglietto è di: &euro;" + p;
   }

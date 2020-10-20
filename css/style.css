@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/treno1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+h1{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted green;
+  border-radius: 4%;
+  padding: 10px;
+  transition: all 4s;
+  color: red;
+  height: 100px;
+  width: auto;
+  background-color: #F2F3F4;
+  opacity: 0.6;
+}
+
+.info:hover{
+  transform: scale(1.50);
+}
