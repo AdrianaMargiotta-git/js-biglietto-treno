@@ -18,12 +18,12 @@ var elementoOutput = document.getElementById('pagare');
   console.log("il prezzo senza sconto è: ", p);
 
   //calcolo prezzo del biglietto per minorenni (20%)
-  var scontoM = prezzo - 0.20;
+  var scontoM = prezzo * 0.80;
   var m = scontoM.toFixed(2);
   console.log("il prezzo con sconto minorenni è: ", m);
 
   //calcolo prezzo del biglietto per over 65 (40%)
-  var scontoO = prezzo - 0.40;
+  var scontoO = prezzo - 0.60;
   var o = scontoO.toFixed(2);
   console.log("il prezzo con sconto over 65 è: ", o);
 
